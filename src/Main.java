@@ -1,25 +1,3 @@
-/*
-You are working on a data analysis project where you need to process an array of opening stock prices containing 10 days of data as float datatype.
-
-Question:
-
-Consider a scenario where you have been given an array of integers representing the daily stock prices of a company for a given period. You are also provided with an ArrayList of stock prices for the same period You are required to implement a program that performs the following tasks:
-
-Note:
-
-Assume both the array and ArrayList of stock prices is not null and contains at least one element.
-
-You are allowed to use loops (for, while) for array and ArrayList.
-
-Write the code for the above scenario, including the required methods and their implementations.
-
-Remember to use appropriate variable names and follow coding best practices.
-
-Submit the assignment in MS Word or PDF file. Your submission should contain the program code, explanation, and output screenshot
-
- */
-
-
 import java.util.ArrayList;
 
 public class Main {
@@ -36,11 +14,6 @@ public class Main {
         }
         return sum / stockPrices.length;
     }
-
-    /*
-    Find the maximum stock price:
-    Write a method, findMaximumPrice, that takes the array of stock prices as input and returns the maximum price among all the stocks.
-     */
     public static float findMaximumPrice(float[] stockPrices) {
         float max = Float.MIN_VALUE;
         for (float price : stockPrices) {
@@ -50,12 +23,6 @@ public class Main {
         }
         return max;
     }
-
-
-    /*
-    Determine the occurrence count of a specific price:
-    Write a method, countOccurrences, that takes the array of stock prices and a target price as input and returns the number of times the target price occurs in the array.
-     */
 
     public static int countOccurrences(float[] stockPrices, float targetPrice) {
         int count = 0;
@@ -68,10 +35,6 @@ public class Main {
         return count; // Return the total count
     }
 
-    /*
-    Compute the cumulative sum of stock prices:
-    Write a method, computeCumulativeSum, that takes the ArrayList of stock prices as input and returns a new ArrayList containing the cumulative sum of prices at each position.
-     */
 
     // Method to compute the cumulative sum of stock prices in an ArrayList
     public static ArrayList<Float> computeCumulativeSum(ArrayList<Float> stockPrices) {
@@ -128,7 +91,5 @@ public class Main {
         for (Float sum : cumulativeSum) {
             System.out.println("Printing sum " + sum);
         }
-
-
     }
 }
